@@ -1,64 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TextWordCount — Free Online Word Counter & Text Analysis Tool</title>
-<meta name="description" content="TextWordCount is a free online word counter and text analysis tool with AI writing features. Count words, characters, sentences, paragraphs, reading time and keyword density in real time — 100% free, privacy-first, no registration.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://ismailgunaydn.github.io/TextWordCount/">
-<style>
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 48px 20px; line-height: 1.65; color: #1a1a1a; background: #fafafa; }
-h1 { font-size: 2rem; margin-bottom: .25rem; }
-h2 { font-size: 1.25rem; margin-top: 2.25rem; }
-.tagline { color: #555; margin-top: 0; }
-a { color: #0a66c2; text-decoration: underline; }
-ul { padding-left: 1.25rem; }
-footer { margin-top: 3rem; font-size: .9rem; color: #666; border-top: 1px solid #e5e5e5; padding-top: 1rem; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TextWordCount — Free Online Word Counter, Character Counter & 900+ Writing Tools</title>
+  <meta name="description" content="Free online word counter, character counter, plagiarism checker, AI writing tools and 900+ professional tools for writers, students, SEO experts and developers. No registration required." />
+  <meta name="keywords" content="word counter, character counter, plagiarism checker, AI writing tools, text tools, online word count, free word counter, sentence counter, paragraph counter, SEO tools, writing tools" />
+  <meta name="author" content="İsmail Günaydın" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="rating" content="general" />
+  <meta name="theme-color" content="#0a66c2" />
+
+  <!-- GEO TARGETING (Global / TR origin) -->
+  <meta name="geo.region" content="TR" />
+  <meta name="geo.placename" content="İstanbul, Türkiye" />
+  <meta name="geo.position" content="41.0082;28.9784" />
+  <meta name="ICBM" content="41.0082, 28.9784" />
+  <meta name="distribution" content="global" />
+  <meta name="language" content="English" />
+
+  <!-- CANONICAL & HREFLANG (EN primary + TR alt + x-default) -->
+  <link rel="canonical" href="https://www.textwordcount.com/" />
+  <link rel="alternate" hreflang="en" href="https://www.textwordcount.com/" />
+  <link rel="alternate" hreflang="tr" href="https://www.textwordcount.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.textwordcount.com/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TextWordCount" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:title" content="TextWordCount — Free Word Counter & 900+ Writing Tools" />
+  <meta property="og:description" content="Count words, characters, sentences and paragraphs instantly. 900+ professional tools, plagiarism checker, AI writing assistants, SEO utilities and more — all free." />
+  <meta property="og:url" content="https://www.textwordcount.com/" />
+  <meta property="og:image" content="https://www.textwordcount.com/og-cover.jpg" />
+  <meta property="og:image:alt" content="TextWordCount — Free online word counter and writing tools" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TextWordCount — Free Word Counter & 900+ Writing Tools" />
+  <meta name="twitter:description" content="The all-in-one writing toolkit: word/character counter, plagiarism checker, AI writing tools and 1080+ pages of content." />
+  <meta name="twitter:image" content="https://www.textwordcount.com/og-cover.jpg" />
+
+  <!-- JSON-LD #1 · WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.textwordcount.com/#website",
+    "url": "https://www.textwordcount.com/",
+    "name": "TextWordCount",
+    "alternateName": "Text Word Count — Free Word Counter Online",
+    "inLanguage": ["en-US", "tr-TR"],
+    "publisher": { "@id": "https://www.textwordcount.com/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.textwordcount.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD #2 · Organization (founder: İsmail Günaydın) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.textwordcount.com/#organization",
+    "name": "TextWordCount",
+    "alternateName": "Text Word Count",
+    "url": "https://www.textwordcount.com/",
+    "logo": "https://www.textwordcount.com/logo.png",
+    "image": "https://www.textwordcount.com/og-cover.jpg",
+    "description": "Free online writing toolkit offering word counter, character counter, plagiarism checker, AI writing tools and 900+ professional utilities.",
+    "founder": {
+      "@type": "Person",
+      "name": "İsmail Günaydın",
+      "jobTitle": "Founder"
+    },
+    "foundingDate": "2020",
+    "areaServed": [
+      { "@type": "Country", "name": "Worldwide" },
+      { "@type": "Country", "name": "Türkiye" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "TR",
+      "addressRegion": "İstanbul",
+      "addressLocality": "İstanbul"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "areaServed": ["TR", "US", "UK", "DE", "FR", "Worldwide"],
+      "availableLanguage": ["English", "Turkish"]
+    }],
+    "knowsAbout": [
+      "Word counting",
+      "Character counting",
+      "Plagiarism detection",
+      "AI writing tools",
+      "SEO tools",
+      "Text analysis",
+      "Grammar checking",
+      "Readability analysis",
+      "Content marketing utilities"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD #3 · BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.textwordcount.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://www.textwordcount.com/tools" },
+      { "@type": "ListItem", "position": 3, "name": "Blog", "item": "https://www.textwordcount.com/blog" },
+      { "@type": "ListItem", "position": 4, "name": "Reviews", "item": "https://www.textwordcount.com/reviews" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD #4 · ItemList (1081 URLs total: 906 tools + 106 blog + 32 store-app + 14 reviews + 7 case studies + 16 other) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "TextWordCount — Tools, Blog, Case Studies and Reviews Catalog",
+    "description": "906 professional tools, 106 in-depth blog articles, 32 store apps, 14 reviews, 7 case studies and editorial pages.",
+    "numberOfItems": 1081,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "https://www.textwordcount.com/", "name": "Word Counter — Home" },
+      { "@type": "ListItem", "position": 2, "url": "https://www.textwordcount.com/tools", "name": "All Tools" },
+      { "@type": "ListItem", "position": 3, "url": "https://www.textwordcount.com/blog", "name": "Blog (106 articles)" },
+      { "@type": "ListItem", "position": 4, "url": "https://www.textwordcount.com/case-studies", "name": "Case Studies (7)" },
+      { "@type": "ListItem", "position": 5, "url": "https://www.textwordcount.com/reviews", "name": "Reviews (14)" },
+      { "@type": "ListItem", "position": 6, "url": "https://www.textwordcount.com/store", "name": "Store" },
+      { "@type": "ListItem", "position": 7, "url": "https://www.textwordcount.com/methodology", "name": "Methodology" },
+      { "@type": "ListItem", "position": 8, "url": "https://www.textwordcount.com/editorial-policy", "name": "Editorial Policy" },
+      { "@type": "ListItem", "position": 9, "url": "https://www.textwordcount.com/about", "name": "About" },
+      { "@type": "ListItem", "position": 10, "url": "https://www.textwordcount.com/faq", "name": "FAQ" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD #5 · FAQPage (5 questions) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is TextWordCount really free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The word counter, character counter and the vast majority of our 900+ tools are 100% free with no registration required. Some advanced AI features may have optional paid tiers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does TextWordCount store the text I paste?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. By default all word counting and analysis happens in your browser. Text is never stored on our servers unless you explicitly choose a 'secure storage' tool, in which case data is encrypted end-to-end."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is the word counter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our word counter follows the standard whitespace-tokenization rules used by Microsoft Word, Google Docs and most academic style guides. Results are accurate for English, Turkish and most Latin-script languages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use TextWordCount for SEO and content marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Beyond word counting, we offer keyword density tools, readability analyzers, plagiarism checkers, meta description length checkers and 900+ utilities specifically designed for SEO and content marketing teams."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is behind TextWordCount?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TextWordCount is founded by İsmail Günaydın and operated by an independent team focused on building privacy-first, free writing tools for a global audience."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 920px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
+    h1 { font-size: 2rem; margin-bottom: .25rem; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; }
+    .tagline { color: #555; margin-top: 0; }
+    a { color: #0a66c2; text-decoration: underline; }
+    ul { padding-left: 1.25rem; }
+    .stats { display: flex; gap: 1.25rem; flex-wrap: wrap; margin: 1rem 0; padding: .75rem 1rem; background:#f6f8fa; border-radius:6px; }
+    .stats span { font-weight:600; }
+    footer { margin-top: 3rem; font-size: .9rem; color: #666; border-top: 1px solid #e5e5e5; padding-top: 1rem; }
+  </style>
 </head>
 <body>
-<header>
-<h1>TextWordCount — Free Online Word Counter &amp; Text Analysis Tool</h1>
-<p class="tagline">Words · Characters · Sentences · Paragraphs · Reading Time · Keyword Density · AI Writing Tools.</p>
-</header>
-<main>
-<section>
-<h2>About TextWordCount</h2>
-<p>TextWordCount is a free, privacy-first online word counter and text analysis tool with built-in AI writing features. Your text never leaves your browser — every metric updates on every keystroke, with no registration, no tracking, and no dark patterns.</p>
-<p>Visit the official site: <a href="https://www.textwordcount.com/">www.textwordcount.com</a>.</p>
-</section>
-<section>
-<h2>What you can do</h2>
-<ul>
-<li><strong>Real-Time Word &amp; Character Count</strong> — Live updates as you type.</li>
-<li><strong>Sentence &amp; Paragraph Analysis</strong> — Structural breakdown of your text.</li>
-<li><strong>Reading Time Estimator</strong> — Based on average reading speed.</li>
-<li><strong>Keyword Density</strong> — Useful for SEO writing and content optimization.</li>
-<li><strong>AI Writing Tools</strong> — AI-powered helpers for writers and editors.</li>
-<li><strong>Privacy-First</strong> — 100% client-side processing, your text stays in your browser.</li>
-</ul>
-</section>
-<section>
-<h2>Featured pages</h2>
-<ul>
-<li><a href="https://www.textwordcount.com/tools">Explore all tools</a> — The full suite of writing and analysis utilities.</li>
-<li><a href="https://www.textwordcount.com/store-app">AI Store</a> — AI-powered apps and assistants for writers.</li>
-</ul>
-</section>
-<section>
-<h2>Connect</h2>
-<ul>
-<li>Website: <a href="https://www.textwordcount.com/">textwordcount.com</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/company/textwordcount/">linkedin.com/company/textwordcount</a></li>
-<li>YouTube: <a href="https://www.youtube.com/@TextWordCount">youtube.com/@TextWordCount</a></li>
-<li>Medium story: <a href="https://medium.com/@ismailgunaydin/we-built-a-free-word-counter-used-by-10-000-writers-daily-heres-what-we-learned-about-4cd290ba483b">We built a free word counter used by 10,000 writers daily</a></li>
-<li>Product Hunt: <a href="https://www.producthunt.com/products/textwordcount">TextWordCount on Product Hunt</a></li>
-</ul>
-</section>
-</main>
-<footer>
-<p>&copy; TextWordCount · Free, privacy-first word counter and text analysis tool. This page is published via GitHub Pages from the <a href="https://github.com/ismailGunaydn/TextWordCount">TextWordCount repository</a>.</p>
-</footer>
+  <header>
+    <h1>TextWordCount — Free Online Word Counter & 900+ Writing Tools</h1>
+    <p class="tagline">Count words, characters, sentences and paragraphs instantly. Plagiarism checker, AI writing assistants, SEO utilities — all free, no registration.</p>
+    <div class="stats">
+      <span>🛠️ 906 Tools</span>
+      <span>📰 106 Blog Articles</span>
+      <span>🛒 32 Store Apps</span>
+      <span>⭐ 14 Reviews</span>
+      <span>📊 7 Case Studies</span>
+      <span>🌍 Global · EN/TR</span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About TextWordCount</h2>
+      <p>TextWordCount is a free, privacy-first online toolkit for writers, students, SEO professionals, content marketers and developers. We provide an instant word counter, character counter, plagiarism detection, grammar utilities, AI writing tools and over 900 professional tools for daily writing tasks.</p>
+    </section>
+
+    <section>
+      <h2>Featured Tools</h2>
+      <ul>
+        <li><a href="https://www.textwordcount.com/">Word Counter & Character Counter</a></li>
+        <li><a href="https://www.textwordcount.com/tools">Browse All 900+ Tools</a></li>
+        <li><a href="https://www.textwordcount.com/store">App Store (32 Apps)</a></li>
+        <li><a href="https://www.textwordcount.com/recommended-tools">Recommended Tools</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Editorial</h2>
+      <ul>
+        <li><a href="https://www.textwordcount.com/blog">Blog — 106 in-depth articles</a></li>
+        <li><a href="https://www.textwordcount.com/case-studies">Case Studies (7)</a></li>
+        <li><a href="https://www.textwordcount.com/reviews">Tool Reviews (14)</a></li>
+        <li><a href="https://www.textwordcount.com/methodology">Our Methodology</a></li>
+        <li><a href="https://www.textwordcount.com/editorial-policy">Editorial Policy</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Is TextWordCount really free?</h3>
+      <p>Yes — the word/character counter and the majority of 900+ tools are free with no registration.</p>
+      <h3>Does TextWordCount store my text?</h3>
+      <p>No. Counting and analysis happen in your browser by default; nothing is stored on our servers.</p>
+      <h3>How accurate is the word counter?</h3>
+      <p>It follows the same whitespace-tokenization rules used by Microsoft Word and Google Docs.</p>
+      <h3>Is TextWordCount good for SEO?</h3>
+      <p>Yes. We offer keyword density, readability, plagiarism and meta length tools designed for SEO and content marketing.</p>
+      <h3>Who is behind TextWordCount?</h3>
+      <p>Founded by İsmail Günaydın and operated by an independent team focused on free, privacy-first tools.</p>
+    </section>
+
+    <section>
+      <h2>Contact & Legal</h2>
+      <p><a href="https://www.textwordcount.com/contact">Contact</a> · <a href="https://www.textwordcount.com/about">About</a> · <a href="https://www.textwordcount.com/privacy">Privacy</a> · <a href="https://www.textwordcount.com/terms">Terms</a> · <a href="https://www.textwordcount.com/affiliate-disclosure">Affiliate Disclosure</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2020-2026 TextWordCount · Founded by İsmail Günaydın · Free, privacy-first writing tools for a global audience.</p>
+  </footer>
 </body>
 </html>
